@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    padding: 7px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.1em;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ff7f50;
+}
+
+.logo {
+    font-size: 2.1em;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    color: #333;
+    font-size: 2.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.instagram {
+    color: #E1306C;
+}
+
+.whatsapp {
+    color: #25D366;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .project-cards {
+        flex-direction: column;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+}
